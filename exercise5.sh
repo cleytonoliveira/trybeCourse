@@ -11,3 +11,4 @@ elif [ -d $FILE ]
 else
     echo "$FILE It's another type of file."
 fi
+ls -l $FILE
