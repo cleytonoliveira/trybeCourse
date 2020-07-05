@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Challenge: Position planet</title>
+        <style>
+            #greeting {
+                background-color: rgb(255, 255, 0);
+                border: 2px solid rgb(0, 0, 0);
+                font-family: "Comic Sans MC", fantasy;
+                padding: 5px;
+                width: 262px;
+                position: absolute;
+                top: 60px;
+                left: 140px;
+                z-index: 3;
+            }
+            #creature {
+                position: absolute;
+                top: 80px;
+                left: 40px;
+                z-index: 2;
+            }
+            #planet {
+                position: absolute;
+                z-index: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Position Planet</h1>
+
+        <img id="planet" src="https://www.kasandbox.org/programming-images/space/planet.png">
+
+        <div id="greeting">
+            <p>Hello! Welcome to position planet!</p>
+        </div>
+
+        <img id="creature" src="https://www.kasandbox.org/programming-images/avatars/mr-pink.png">
+
+    </body>
+</html>
