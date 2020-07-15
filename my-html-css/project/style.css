@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(253 , 251 , 251);
+  scroll-padding-top: 115px;
+  scroll-behavior: smooth;
+}
+
+.header {
+  top: 0;
+  color: white;
+  position: fixed;
+  width: 100%;
+}
+
+.main_title {
+  font-size: 35px;
+  text-align: center;
+  background-color: rgb(80 , 180 , 226);
+  padding: 3%;
+  font-family: Open Sans, sans-serif;
+}
+
+.navigation {
+  text-align: center;
+  font-family: Merriweather, serif;
+  font-size: 20px;
+  padding-top: 125px;
+  padding-bottom: 70px;
+}
+
+.navigation li {
+  display: inline-block;
+  padding: 15px;
+}
+
+.footer a {
+  background-color: rgb(51 , 51 , 51);
+  color: white;
+  margin: 0 10px;
+}
+
+.text a {
+  text-decoration: none;
+  color: rgb(25 , 25 , 25);
+  background-color: rgb(80 , 180 , 226);
+}
+
+.navigation li a {
+  text-decoration: none;
+  color: rgb(51 , 51 , 51);
+  padding: 15px;
+}
+
+.navigation li a:hover {
+  background-color: rgb(51 , 51 , 51);
+  color: white;
+  padding: 15px;
+}
+
+.picture {
+  border-radius: 100%;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.box {
+  background-color: rgb(80 , 180 , 226);
+  clear: both;
+}
+
+.title {
+  font-family: Open Sans, sans-serif;
+  font-size: 35px;
+  text-align: center;
+  color: white;
+  background-color: rgb(80 , 180 , 226);
+  padding-top: 30px;
+}
+
+.text {
+  color: rgb(25 , 25 , 25);
+  font-family: Merriweather, serif;
+  font-size: 20px;
+  background-color: rgb(80 , 180 , 226);
+  padding: 40px 40px 100px;
+  line-height: 40px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text th , td {
+  padding: 20px;
+  background-color: white;
+}
+
+.text p , em , strong {
+  background-color: rgb(80 , 180 , 226);
+}
+
+.lado-esquerdo {
+  float: left;
+  padding: 50px 150px;
+}
+
+.lado-direito {
+  float: left;
+  padding: 50px 150px;
+}
+
+.second_title {
+  font-size: 35px;
+  font-family: Open Sans, sans-serif;
+}
+
+.list {
+  font-size: 20px;
+  font-family: Merriweather, serif;
+  line-height: 35px;
+  padding-top: 40px;
+}
+
+.footer {
+  text-align: center;
+  font-family: Merriweather, serif;
+  font-size: 15px;
+  padding: 15px;
+  background-color: rgb(51 , 51 , 51);
+  color: white;
+}
