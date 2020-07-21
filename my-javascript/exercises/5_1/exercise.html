@@ -72,9 +72,19 @@
 
        // Exercise 4
        function refactoringTitle() {
-         document.getElementsByClassName('title')[0].style.fontSize = '50px';
+         document.getElementsByClassName('title')[0].innerHTML = 'Exercício 5.1 - JavaScript';
        }
        refactoringTitle();
+
+       // Exercise 5
+       function lowerCase() {
+        for (let index = 0; index < document.getElementsByTagName('p').length; index += 1) {
+          document.getElementsByTagName('p')[index].style.textTransform = 'uppercase';
+        }
+       }
+       lowerCase();
+
+       // Exercise 6
     </script>
   </body>
 </html>
