@@ -53,38 +53,50 @@
         */
 
       // Exercise 1
-       function changeTag() {
-        document.getElementsByTagName('p')[0].innerHTML = 'Ser Desenvolvedor Full Stack';
+       function changeText() {
+        let paragraph = document.getElementsByTagName('p')[1];
+        paragraph.innerHTML = 'Ser Desenvolvedor Full Stack';
        }
-       changeTag();
+       changeText();
 
        // Exercise 2
-       function changeColor() {
-        document.getElementsByClassName('main-content')[0].style.backgroundColor = 'rgb(76 , 164 , 109)';
+       function changeSquareToGreen() {
+        let squareYellow = document.getElementsByClassName('main-content')[0];
+        squareYellow.style.backgroundColor = 'rgb(76 , 164 , 109)';
        }
-       changeColor();
+       changeSquareToGreen();
 
        // Exercise 3
-       function changeCenterBox() {
-        document.getElementsByClassName('center-content')[0].style.backgroundColor = 'white';
+       function changeSquareToWhite() {
+         let squareRed = document.getElementsByClassName('center-content')[0];
+         squareRed.style.backgroundColor = 'white';
        }
-       changeCenterBox();
+       changeSquareToWhite();
 
        // Exercise 4
        function refactoringTitle() {
-         document.getElementsByClassName('title')[0].innerHTML = 'Exercício 5.1 - JavaScript';
+        let title = document.getElementsByClassName('title')[0];
+        title.innerHTML = 'Exercício 5.1 - JavaScript';
        }
        refactoringTitle();
 
        // Exercise 5
-       function lowerCase() {
-        for (let index = 0; index < document.getElementsByTagName('p').length; index += 1) {
-          document.getElementsByTagName('p')[index].style.textTransform = 'uppercase';
+       function paragraphUpperCase() {
+         let paragraph = document.getElementsByTagName('p')
+        for (let index = 0; index < paragraph.length; index += 1) {
+          paragraph[index].style.textTransform = 'uppercase';
         }
        }
-       lowerCase();
+       paragraphUpperCase();
 
        // Exercise 6
+       function showParagraphs() {
+         let paragraph = document.getElementsByTagName('p');
+        for (let index = 0; index < paragraph.length; index +=1) {
+          console.log(paragraph[index].innerHTML);
+        }
+       }
+       showParagraphs();
     </script>
   </body>
 </html>
