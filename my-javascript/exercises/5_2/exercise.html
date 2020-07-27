@@ -57,20 +57,29 @@
   </head>
   <body>
     <script>
+      // Exercise 1
       const elementH1 = document.createElement('h1');
       elementH1.innerHTML = 'Exercício 5.2 - Javascript DOM';
       document.body.appendChild(elementH1);
 
+      // Exercise 2
       const elementDivMain = document.createElement('div');
       elementDivMain.className = 'main-content';
       document.body.appendChild(elementDivMain);
 
+      // Exercise 3
       const elementDivCenter = document.createElement('div');
       elementDivCenter.className = 'center-content';
       elementDivMain.appendChild(elementDivCenter);
 
+      // Exercise 4
       const textParagraph = document.createElement('p');
       elementDivCenter.appendChild(textParagraph).innerHTML = "Eu sou Trybe. Serei um dos maiores desenvolvedores de software.";
+
+      // Exercise 5
+      const elementDivLeft = document.createElement('div');
+      elementDivLeft.className = 'left-content';
+      elementDivMain.appendChild(elementDivLeft);
 
     </script>
   </body>
