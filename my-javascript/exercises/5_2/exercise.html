@@ -67,9 +67,10 @@
 
       const elementDivCenter = document.createElement('div');
       elementDivCenter.className = 'center-content';
-      document.body.querySelector('div').appendChild(elementDivCenter);
+      elementDivMain.appendChild(elementDivCenter);
 
-      
+      const textParagraph = document.createElement('p');
+      elementDivCenter.appendChild(textParagraph).innerHTML = "Eu sou Trybe. Serei um dos maiores desenvolvedores de software.";
 
     </script>
   </body>
