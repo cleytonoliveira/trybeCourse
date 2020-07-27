@@ -2,8 +2,9 @@ let info = {
   personagem: "Margarida",
   origem: "Pato Donald",
   nota: "Namorada do personagem principal nos quadrinhos do Pato Donald",
-  recorrente: "Sim",
-}
+};
+
+info.recorrente = 'Sim';
 
 let info1 = {
   personagem: "Tio Patinhas",
@@ -12,9 +13,10 @@ let info1 = {
   recorrente: "Sim",
 }
 
-console.log(`${info.personagem} e ${info1.personagem}`);
-console.log(`${info.origem} e ${info1.origem}`);
-console.log(`${info.nota} e ${info1.nota}`);
-if (info.recorrente === "Sim" && info1.recorrente === "Sim") {
-  console.log('Ambos recorrentes');
+for (let index in info) {
+  if (info[index] === info1[index]) {
+    console.log('Ambos recorrentes');
+  } else {
+    console.log(info[index] + ' e ' + info1[index])
+  }
 }
