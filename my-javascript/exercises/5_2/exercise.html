@@ -92,7 +92,16 @@
       img.src = 'https://picsum.photos/200';
       elementDivLeft.appendChild(img);
 
-      
+      // Exercise 8
+      const list = document.createElement('ul');
+      elementDivRight.appendChild(list);
+      const numbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez']
+      for (let index in numbers) {
+        const liList = document.createElement('li');
+        liList.innerHTML = numbers[index];
+        list.appendChild(liList);
+      }
+
     </script>
   </body>
 </html>
