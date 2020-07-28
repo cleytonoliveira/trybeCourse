@@ -46,11 +46,16 @@
                 
                 <p>Add a HTML button below the &lt;script&gt; tag.  Give this button an <b>onClick</b> event handler.  When the button is clicked it should multiply <b>gamePrice</b> by <b>discount</b> and present an alert box containing the phrase &quot;&pound;(result) off!&quot;.  You will need <a href="http://nptcstudents.co.uk/andrewg/jsweb/maths.html" target="_blank">concatenation</a> to achieve this.</p> 
               
+              <button id="btn-calculator">Calculate</button>
             	<script language="javascript" type="text/javascript">
-				<!-- JavaScript for task 3 here -->				
-				<!-- JavaScript for task 3 here -->
-				<!-- JavaScript for task 3 here -->
-				</script>
+        const gamePrice = 39.99;
+        const discount = 0.20;	
+        const btnCalculator = document.querySelector("#btn-calculator");
+        btnCalculator.addEventListener("click", function () {
+          let result = gamePrice * discount;
+          alert(`${result.toFixed(2)} off!`);
+        })
+        </script>
                 
                 <p>You may want to consider using JavaScript's built in <a href="http://www.w3schools.com/js/js_obj_math.asp" target="_blank">Maths object</a> to round the number you get in your result to a more reasonable one.</p>
             
