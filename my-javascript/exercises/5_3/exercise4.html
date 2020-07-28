@@ -11,16 +11,34 @@
     <script>
       const cat = document.querySelector('img');
       cat.style.left = '0px';
+      let startPosition = true;
+      let mid = false;
+      let dance = "https://media.tenor.com/images/51b54b0bb99c706d297e477972c27d0c/tenor.gif";
+
+      function catDance() {
+        cat.src = dance;
+        window.setTimeout(catWalk, 1)
+      };
 
       function catWalk() {
         let position = parseInt (cat.style.left);
         cat.style.left = (position + 10) + 'px';
-        if (position > (innerWidth - cat.width)) {
-          cat.style.left = "0px";
+        let mid = ((position) / 2);
+        if (!startPosition && mid === position) {
+          catDance();
+        }
+        if (startPosition && position > (innerWidth - cat.width)) {
+          startPosition = false;
+        } else if (!startPosition && (position <= 0)) {
+          startPosition = true;
+        } else if (startPosition) {
+          cat.style.left = (position + 10) + 'px';
+        } else {
+          cat.style.left = (position - 10) + 'px';
         }
       }
       window.setInterval(catWalk, 50);
-      
+
     </script>
   </body>
 </html>
