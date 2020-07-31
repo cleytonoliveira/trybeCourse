@@ -34,4 +34,4 @@ const btn3 = document.querySelectorAll("button")[2];
 btn3.addEventListener('click', finishTheStory);
 
 const input1 = document.querySelectorAll("input")[0];
-input1.addEventListener('keyup', typeAndScream);
+input1.addEventListener('input', typeAndScream);
