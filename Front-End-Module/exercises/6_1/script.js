@@ -1,5 +1,5 @@
 const states = [
-  'Selecione o Estado',
+  '',
   'Acre',
   'Alagoas',
   'Amapá',
@@ -54,5 +54,35 @@ function verifyDate() {
   }
 }
 
+const output = document.querySelector('.output');
+const form = document.getElementById('form');
+const btnReset = document.getElementById('reset');
+
+function outputInformantions(event) {
+  event.preventDefault();
+  const inputName = document.getElementById('name').value;
+  const inputEmail = document.getElementById('email').value;
+  const inputCpf = document.getElementById('cpf').value;
+  const inputAddress = document.getElementById('address').value;
+  const inputCity = document.getElementById('city').value;
+  const inputStates = document.getElementById('states').value;
+  const inputResume = document.getElementById('resume').value;
+  const inputPosition = document.getElementById('position').value;
+  const inputPositionDescription = document.getElementById('position-description').value;
+  const inputDate = document.getElementById('date').value;
+
+  const informations = [inputName, inputEmail, inputCpf, inputAddress, inputCity, inputStates, inputResume, inputPosition, inputPositionDescription, inputDate];
+
+  for (let index = 0; index < informations.length; index += 1) {
+    const aboutInformations = document.createElement('p');
+    aboutInformations.innerHTML = informations[index];
+    output.appendChild(aboutInformations);
+  }
+}
+
 generateStates();
 date.addEventListener('change', verifyDate);
+form.addEventListener('submit', outputInformantions);
+btnReset.addEventListener('click', function () {
+  output.innerHTML = '';
+})

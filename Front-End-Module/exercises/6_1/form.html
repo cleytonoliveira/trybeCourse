@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
   </head>
   <body>
     <div class="container">
-      <form action="" method="GET"> <!-- Para enviar arquivos usar o enctype="multipart/form-data" -->
+      <form action="" method="GET" id="form"> <!-- Para enviar arquivos usar o enctype="multipart/form-data" -->
         <fieldset>
           <legend>Dados Pessoais</legend>
           <div>
@@ -63,8 +64,9 @@
         </fieldset>
           <div>
             <button type="submit">Enviar</button>
-            <button type="reset">Limpar</button>
+            <button type="reset" id="reset">Limpar</button>
           </div>
+          <div class="output"></div>
       </form>
     </div>
     <script src="script.js"></script>
