@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="" method="GET"> <!-- Para enviar arquivos usar o enctype="multipart/form-data" -->
+        <fieldset>
+          <legend>Dados Pessoais</legend>
+          <div>
+            <label for="name">Nome:</label>
+            <input type="text" name="name" id="name" maxlength="40" required>
+          </div>
+          <div>
+            <label for="email">E-mail:</label>
+            <input type="text" name="email" id="email" maxlength="50" required>
+          </div>
+          <div>
+            <label for="cpf">CPF:</label>
+            <input type="text" name="cpf" id="cpf" maxlength="11" required>
+          </div>
+          <div>
+            <label for="address">Endereço:</label>
+            <input type="text" name="address" id="address" maxlength="200" required>
+          </div>
+          <div>
+            <label for="city">Cidade:</label>
+            <input type="text" name="city" id="city" maxlength="28" required>
+          </div>
+          <div>
+            <label for="state">Estado:</label>
+            <select name="state" id="states" required></select>
+          </div>
+          <div>
+            <label for="type">Tipo:</label>
+            <input id="home" type="radio" name="type" required>
+            <label for="home">Casa</label>
+            <input id="apartment" type="radio" name="type" required>
+            <label for="apartment">Apartamento</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Dados Último Emprego</legend>
+          <div>
+            <label for="resume">Resumo do currículo</label>
+            <textarea name="resume" cols="30" rows="10" maxlength="1000" required></textarea>
+          </div>
+          <div>
+            <label for="position">Cargo</label>
+            <input type="text" name="position" maxlength="40" required>
+          </div>
+          <div>
+            <label for="position-description">Descrição do Cargo</label>
+            <input type="text" name="position-description" maxlength="500" required>
+          </div>
+          <div>
+            <label for="date">Data de início</label>
+            <input type="text" name="date" required>
+          </div>
+        </fieldset>
+          <div>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+          </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
