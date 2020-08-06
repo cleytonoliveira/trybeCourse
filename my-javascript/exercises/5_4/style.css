@@ -1,0 +1,21 @@
+.container {
+  margin: 20px 50px;
+  display: flex;
+  align-items: center;
+}
+
+.first-paragraph {
+  margin: 30px;
+  text-align: justify;
+}
+
+.second-paragraph {
+  margin: 30px;
+  text-align: justify;
+}
+
+.preferences {
+  text-align: center;
+  display: flex;
+  justify-content:space-around;
+}
