@@ -54,7 +54,7 @@ function outputInformantions(event) {
   const inputResume = document.getElementById('resume').value;
   const inputPosition = document.getElementById('position').value;
   const inputPositionDescription = document.getElementById('position-description').value;
-  const inputDate = document.getElementById('date').value;
+  const inputDate = document.getElementById('datepicker').value;
 
   const informations = [inputName, inputEmail, inputCpf, inputAddress, inputCity, inputStates, inputResume, inputPosition, inputPositionDescription, inputDate];
 
@@ -81,6 +81,50 @@ const picker = new Pikaday({
       const year = parseInt(parts[2], 10);
       return new Date(year, month, day);
   }
+});
+
+new window.JustValidate('.js-form', {
+  Rules: {
+    name: {
+      required: true,
+      minLength: 3,
+      maxLength: 40
+    },
+    email: {
+      required: true,
+      email: true,
+      maxLength: 50
+    },
+    text: {
+      required: true,
+      maxLength: 1000
+    },
+    position: {
+      required: true,
+      maxLength: 40
+    },
+  },
+  messages: {
+    name: {
+      required: 'Este campo é obrigatório.',
+      maxLength: 'Você passou o limite de caracteres.'
+    },
+    email: {
+      required: 'Este campo é obrigatório.',
+      email: 'O email digitado não é válido.',
+      maxLength: 'Você passou o limite de caracteres.'
+    },
+    text: {
+      required: 'Este campo é obrigatório.',
+      maxLength: 'Você passou o limite de caracteres.'
+    },
+    position: {
+      required: 'Este campo é obrigatório.',
+    }
+  },
+  submitHandler: function (form, values) {
+    console.log(form, values);
+  },
 });
 
 generateStates();

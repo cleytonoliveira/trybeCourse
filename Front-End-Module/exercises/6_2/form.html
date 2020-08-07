@@ -5,46 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário 6.2 com Bootstrap</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="css/pikaday.css"> -->
+    <link rel="stylesheet" href="css/pikaday.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div class="container">
-      <form action="" method="GET" id="form"> <!-- Para enviar arquivos usar o enctype="multipart/form-data" -->
+      <form action="" method="GET" id="form" class="js-form"> <!-- Para enviar arquivos usar o enctype="multipart/form-data" -->
         <fieldset class="form-group">
           <legend class="form-group">Dados Pessoais</legend>
           <div class="form-group">
             <label for="name">Nome:</label>
-            <input class="form-control" type="text" name="name" id="name" maxlength="40" required>
+            <input class="form-control" data-validate-field="name" type="text" name="name" id="name" maxlength="40" placeholder="Nome completo" required>
           </div>
           <div class="form-group">
             <label for="email">E-mail:</label>
-            <input class="form-control" type="text" name="email" id="email" maxlength="50" required>
+            <input class="form-control" data-validate-field="email" type="text" name="email" id="email" placeholder="Digite seu e-mail" maxlength="50" required>
           </div>
           <div class="form-group">
             <label for="cpf">CPF:</label>
-            <input class="form-control" type="text" name="cpf" id="cpf" maxlength="11" required>
+            <input class="form-control" data-validate-field="cpf" type="text" name="cpf" id="cpf" placeholder="000.000.000-00" maxlength="11" required>
           </div>
           <div class="form-group">
             <label for="address">Endereço:</label>
-            <input class="form-control" type="text" name="address" id="address" maxlength="200" required>
+            <input class="form-control" data-validate-field="address" type="text" name="address" id="address" placeholder="Rua, Av., Travessa" maxlength="200" required>
           </div>
           <div class="form-group">
             <label for="city">Cidade:</label>
-            <input class="form-control" type="text" name="city" id="city" maxlength="28" required>
+            <input class="form-control" data-validate-field="city" type="text" name="city" id="city" placeholder="Digite sua Cidade" maxlength="28" required>
           </div>
           <div class="form-group">
             <label for="state">Estado:</label>
-            <select class="form-control" name="state" id="states" required></select>
+            <select class="form-control" data-validate-field="state" name="state" id="states" required></select>
           </div>
           <div class="form-group">
             <label for="type">Tipo:</label>
             <div class="custom-control custom-radio">
-              <input class="custom-control-input" id="home" type="radio" name="type" required>
+              <input class="custom-control-input" data-validate-field="radio" id="home" type="radio" name="type" required>
               <label class="custom-control-label" for="home">Casa</label>
             </div>
             <div class="custom-control custom-radio">
-              <input class="custom-control-input" id="apartment" type="radio" name="type" required>
+              <input class="custom-control-input" data-validate-field="radio" id="apartment" type="radio" name="type" required>
               <label class="custom-control-label" for="apartment">Apartamento</label>
             </div>
           </div>
@@ -53,19 +53,19 @@
           <legend class="form-group">Dados Último Emprego</legend>
           <div class="form-group">
             <label for="resume">Resumo do currículo</label>
-            <textarea class="form-control" name="resume" id="resume" cols="30" rows="10" maxlength="1000" required></textarea>
+            <textarea class="form-control" data-validate-field="text" name="resume" id="resume" cols="30" rows="10" maxlength="1000" placeholder="Digite seu Currículo" required></textarea>
           </div>
           <div class="form-group">
             <label for="position">Cargo</label>
-            <input class="form-control" type="text" id="position" name="position" maxlength="40" required>
+            <input class="form-control" data-validate-field="position" type="text" id="position" name="position" placeholder="Digite seu cargo" maxlength="40" required>
           </div>
           <div class="form-group">
             <label for="position-description">Descrição do Cargo</label>
-            <input class="form-control" type="text" name="position-description" id="position-description" maxlength="500" required>
+            <input class="form-control" data-validate-field="positionDescription" type="text" name="position-description" id="position-description" placeholder="Descreva seu cargo" maxlength="500" required>
           </div>
           <div class="form-group">
             <label for="date">Data de início</label>
-            <input class="form-control" type="text" name="date" id="datepicker" autocomplete="off" required>
+            <input class="form-control" data-validate-field="date" type="text" name="date" placeholder="00/00/0000" id="datepicker" autocomplete="off" required>
           </div>
         </fieldset>
           <div class="btn-group">
@@ -75,10 +75,12 @@
             <div class="form-group">
               <button class="btn btn-danger" type="reset" id="reset">Limpar</button>
             </div>
+            <div class="output"></div>
           </div>
       </form>
     </div>
     <script src="pikaday.js"></script>
+    <script src="just-validate.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
