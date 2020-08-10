@@ -2,6 +2,6 @@
   display: flex;
 }
 
-.yellow {
-  order: 2;
+.red {
+  order: -3;
 }
