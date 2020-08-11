@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.center {
+  width: 90vw;
+  height: 100vh;
+  background: #333;
+  margin: auto;
+}
+
+.top {
+  width: 100%;
+  height: 20vh;
+  background: #f00;
+  text-align: center;
+}
+
+.top h1 {
+  color: #fff;
+  font-size: 2em;
+}
+
+.columns {
+  display: flex;
+}
+
+.columns2 {
+  width: 50%;
+  background: #999;
+  text-align: center;
+}
