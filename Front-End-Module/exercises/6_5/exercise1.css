@@ -1,0 +1,40 @@
+body {
+  font-size: 2em;
+}
+h1 {
+  font-size: 1.3em;
+}
+h2 {
+
+}
+
+img {
+  max-width: 100%;
+}
+
+figure {
+  margin: 0;
+  line-height: 3.5em;
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    background-color: aquamarine;
+    font-size: 2.5em;
+    margin: 40px;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  body {
+    background-color: blueviolet;
+    font-size: 3em;
+    margin: 100px;
+    max-width: 100%;
+  }
+}
