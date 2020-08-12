@@ -1,0 +1,22 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@media screen and (max-width: 360px) {
+  body {
+    font-size: 1.5em;
+    line-height: 1.5em;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  ul {
+    list-style: none;
+  }
+}
