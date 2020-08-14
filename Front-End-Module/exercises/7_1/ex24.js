@@ -1,17 +1,18 @@
 const skills = ['Git', 'HTML', 'JS', 'CSS', 'Unix'];
+skills.sort();
 
 function changePhrase (name) {
   const welcome = welcomeName => `Tryber ${welcomeName} aqui! 
   Tudo bem?`;
-  let welcomePhase = `${welcome(name)}
+  let welcomePhrase = `${welcome(name)}
   Minhas cinco principais habilidades são:`
   skills.forEach((skill) =>
-  welcomePhase = `${welcomePhase}
+  welcomePhrase = `${welcomePhrase}
   - ${skill}`)
-  welcomePhase = `${welcomePhase}
+  welcomePhrase = `${welcomePhrase}
   #goTrybe
   `
-  return welcomePhase
+  return welcomePhrase
 }
 
 console.log(changePhrase('Cleyton'));
