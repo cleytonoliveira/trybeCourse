@@ -1,6 +1,6 @@
 function checkScope() {
   'use strict';
-  let i = 'function scope';
+  const i = 'function scope';
   if (true) {
     let i = 'block scope';
     console.log('Block scope i is: ', i);
