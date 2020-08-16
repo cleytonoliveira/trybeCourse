@@ -1,0 +1,21 @@
+.center {
+  width: 100vw;
+}
+
+.top {
+  background: #ff0;
+}
+
+.top h1 {
+  color: #f00;
+}
+
+.columns {
+  flex-direction: column;
+}
+
+.columns2 {
+  background-color: #f00;
+  width: 100%;
+  margin-top: 5px;
+}
