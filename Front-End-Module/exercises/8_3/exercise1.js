@@ -12,5 +12,5 @@ function flatten() {
   return arrays
     .reduce((accumulator, currentValue) => accumulator.concat(currentValue));
 }
-console.log(flatten());
+
 assert.deepEqual(flatten(), ["1", "2", "3", true, 4, 5, 6]);
