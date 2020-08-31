@@ -12,13 +12,17 @@ const generateRandomNumbers = () => {
 new Promise((resolve, reject) => {
   const randomNumbers = generateRandomNumbers();
   const numbersToSquare = randomNumbers.map(number => number * number);
-  const sumOfNumber = numbersToSquare.reduce((acc, current) => acc + current);
+  const sumOfNumber = numbersToSquare.reduce((acc, current) => acc + current, 0);
   return (sumOfNumber < 8000) ? resolve(sumOfNumber) : reject(sumOfNumber);
 })
 
 .then(result => {
   const numbersToDivide = [2, 3, 5, 10];
   const dividedNumbers = (numbersToDivide.map(number => result / number));
-  return console.log(dividedNumbers);
+  return dividedNumbers;
 })
-.catch(sum => console.log('É mais de oito mil! Essa promise deve estar quebrada!'));
+.then(result => {
+  const summedValues = result.reduce((acc, current) => acc + current, 0);
+  return console.log(summedValues);
+})
+.catch(() => console.log('É mais de oito mil! Essa promise deve estar quebrada!'));
