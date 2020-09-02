@@ -1,0 +1,185 @@
+body {
+  background-image: linear-gradient(rgb(246, 247, 248), rgb(167, 193, 245) 300%);
+  font-family: Helvetica, Arial, sans-serif;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* RODRIGO */
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  background-image: linear-gradient(rgb(78, 105, 162), rgb(59, 89, 152) 50%);
+  border-bottom: 1px solid rgb(19, 55, 131);
+  display: flex;
+  justify-content: space-between;
+  padding-top: 13px;
+}
+
+.facebook-logo {
+  height: 34px;
+  margin: 17px 0;
+  width: 170px;
+}
+
+.facebook-login {
+  color: white;
+  display: flex;
+  font-size: 12px;
+}
+
+.facebook-login label {
+  padding-bottom: 5px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-right: 14px;
+}
+
+.form-group input {
+  padding: 3px;
+  width: 142px;
+}
+
+.form-control {
+  align-self: flex-end;
+  display: flex;
+}
+
+/* CLEYTON */
+.slogan {
+  color: rgb(14, 56, 95);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 29px;
+  margin-top: 40px;
+  width: 450px;
+}
+
+.title {
+  color: rgb(51, 51, 51);
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.quick-easy {
+  color: rgb(29, 33, 41);
+  font-size: 19px;
+  margin: 10px 5px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+}
+
+.left-content {
+  align-self: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  width: 300px;
+}
+
+.form-content {
+  display: flex;
+  flex-flow: wrap column;
+}
+
+.form-content label {
+  color: rgb(144, 148, 156);
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  margin-left: 7px;
+  margin-top: 10px;
+}
+
+.form-content input {
+  border: solid 1px rgb(189, 199, 216);
+  border-radius: 5px;
+  font-size: 18px;
+  margin: 5px;
+  padding: 8px 10px;
+}
+
+.full-name {
+  display: flex;
+}
+
+.full-name input {
+  width: 172px;
+}
+
+.phone-password {
+  display: flex;
+  flex-direction: column;
+}
+
+.birthdate {
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-option {
+  display: flex;
+  flex-direction: column;
+}
+
+.gender label {
+  color: rgb(29, 33, 41);
+  font-size: 18px;
+  font-weight: 100;
+  margin: 0;
+  padding: 0 10px 0 3px;
+}
+
+.btn-register {
+  background-color: rgb(105, 167, 78);
+  background-image: linear-gradient(rgb(103, 174, 85), rgb(87, 136, 67));
+  border: solid 1px rgb(44, 81, 21);
+  border-radius: 5px;
+  box-shadow: inset 0 1px 1px rgb(164, 227, 136);
+  color: white;
+  cursor: pointer;
+  font-size: 19px;
+  font-weight: 700;
+  margin: 10px 0;
+  padding: 7px 40px;
+}
+
+.btn-register:hover {
+  background-image: linear-gradient(rgb(115, 185, 95), rgb(87, 136, 67));
+}
+
+.btn-login {
+  background-color: rgb(66, 103, 178);
+  border: solid 1px rgb(41, 72, 125);
+  border-radius: 2px;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  padding: 2px 6px;
+}
+
+.btn-login:hover {
+  background-color: rgb(59, 89, 152);
+}
+
+.invalid-input {
+  color: red;
+  font-size: 13px;
+  margin: 0;
+}

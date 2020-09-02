@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Project Meme Generator</title>
+  </head>
+  <body>
+    <header class="title">
+      <h1>Generator Meme</h1>
+    </header>
+    <input class="input" type="text" placeholder="Digite seu texto" maxlength="60" id="text-input" autofocus>
+    <input class="upload" type="file" accept="image/*" id="meme-insert">
+    <section id="meme-image-container" class="meme-container">
+      <div id="meme-text" class="meme-text"></div>
+      <img id="meme-image" class="meme-image" src="">
+    </section>
+    <section class="customization">
+      <button id="fire" class="fire">Fire</button>
+      <button id="water" class="water">Water</button>
+      <button id="earth" class="earth">Earth</button>
+    </section>
+    <section class="meme-options">
+      <img src="imgs/meme1.png" id="meme-1" class="meme" alt="">
+      <img src="imgs/meme2.png" id="meme-2" class="meme" alt="">
+      <img src="imgs/meme3.png" id="meme-3" class="meme" alt="">
+      <img src="imgs/meme4.png" id="meme-4" class="meme" alt="">
+    </section>
+    <footer>&copy; Cleyton Oliveira</footer>
+    <script src="script.js"></script>
+  </body>
+</html>
