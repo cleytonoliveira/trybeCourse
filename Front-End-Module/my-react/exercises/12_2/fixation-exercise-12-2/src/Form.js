@@ -8,13 +8,15 @@ class Form extends Component {
       firstname: '',
       age: 0,
       email: '',
+      testando: false,
       message: '',
     }
     this.handleChange = this.handleChange.bind(this);
   }
 
   handleChange({ target }) {
-    const { value, name } = target;
+    const { name } = target;
+    const value = target.type === 'checkbox' ? target.checked : target.value;
     this.setState({
       [name]: value,
     })
@@ -38,6 +40,10 @@ class Form extends Component {
         <label>
           Email
           <input type="email" name="email" onChange={this.handleChange} />
+        </label>
+        <label>
+          Teste agora
+          <input type="checkbox" name="testando" onChange={this.handleChange} />
         </label>
         <label>
           Mensagem
