@@ -5,7 +5,7 @@ class Message extends Component {
     const { value, handleChange } = this.props;
 
     let error = undefined;
-    if (value.length > 120) error = "Texto muito grande!"
+    if (value.length > 120) error = "Texto muito grande!";
 
     return (
       <label>

@@ -5,7 +5,7 @@ class Select extends Component {
     const { escolhaTeste, handleChange } = this.props;
 
     let error = undefined;
-    if (escolhaTeste === 'teste2') error = "Opção errada!"
+    if (escolhaTeste === 'teste2') error = "Opção errada!";
     return (
       <div>
         <select name="escolhaTeste" value={escolhaTeste} onChange={handleChange}>
