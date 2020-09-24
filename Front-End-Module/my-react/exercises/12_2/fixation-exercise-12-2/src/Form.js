@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Select from './Select';
+import Message from './Message';
 
 class Form extends Component {
   constructor() {
@@ -27,10 +29,7 @@ class Form extends Component {
       <form>
         <fieldset>
           <legend>Primeira parte</legend>
-          <select name="escolhaTeste" value={this.state.escolhaTeste} onChange={this.handleChange}>
-            <option value="teste1">teste 1</option>
-            <option value="teste2">teste 2</option>
-          </select>
+            <Select escolhaTeste={this.state.escolhaTeste} handleChange={this.handleChange} />
           <label>
             Nome
             <input type="text" name="firstname" onChange={this.handleChange} />
@@ -53,10 +52,7 @@ class Form extends Component {
             Teste agora
             <input type="checkbox" name="testando" onChange={this.handleChange} />
           </label>
-          <label>
-            Mensagem
-            <textarea name="message" onChange={this.handleChange} />
-          </label>
+          <Message value={this.state.message} handleChange={this.handleChange} />
           <label>
             Envie um arquivo
             <input type="file" />
